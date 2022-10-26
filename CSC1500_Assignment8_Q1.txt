@@ -1,0 +1,6 @@
+prompt = int(input("Enter a number: "))
+add = prompt + 2
+multi = add * 3
+sub = multi - 6
+div = sub / 3
+print (div)

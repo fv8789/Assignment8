@@ -1,0 +1,29 @@
+def CPL(sigma,lsl,xbar):
+    cpl = (xbar-lsl)/(3*sigma)
+    return cpl
+
+def CPU(sigma, usl, xbar):
+    cpu = (usl-xbar)/(3*sigma)
+    return cpu
+
+def Cpk(cpu,cpl):
+    if(cpu>cpl):
+        x = cpl
+    else:
+        x = cpu
+    print("CpK = min(cpu,cpl) = ",str(x))
+    return 0
+
+usl = 17.5
+lsl = 15.5
+d2 = 2.326
+xbar = 16.507
+rbar = 0.561
+sigma = rbar/d2
+cpu = CPU(sigma,usl,xbar)
+cpl = CPL(sigma, lsl, xbar)
+print("CPU = ", str(cpu))
+print("Cpl = ", str(cpl))
+Cpk(cpu,cpl)
+
+

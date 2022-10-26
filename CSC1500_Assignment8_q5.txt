@@ -1,0 +1,17 @@
+import random
+
+def pirate():
+    treasure = ["lose", "gain "]
+    loot = 10
+    while loot > 0:
+        wager = int(input("Place a wager between 1 and 5 "))
+        spin = random.choice(treasure)
+        print(spin)
+        if spin == "lose":
+            loot = loot - wager
+            print("loot = ",loot)
+        if spin == "gain":
+            loot = loot + wager
+            print("loot = ",loot)
+
+pirate()

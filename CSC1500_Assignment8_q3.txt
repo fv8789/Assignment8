@@ -1,0 +1,4 @@
+prompt = input("Enter: ")
+print(str(prompt))
+print(int(prompt))
+print(float(prompt))

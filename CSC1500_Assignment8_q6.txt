@@ -1,0 +1,17 @@
+import random
+import string
+dict1 = {}
+dict1["passwords"] = []
+dict1.update({"passwords":["123456","12345","123456789","password","iloveyou","princess","1234567","rockyou",
+         "12345678","abc123","nicole","daniel","babygirl"]})
+while True:
+    lower = string.ascii_lowercase
+    num = string.digits
+    symb = string.punctuation
+    add = lower + num
+    rand = random.sample(add,6)
+    passwords = "".join(rand)
+    passwords1 = []
+    if passwords not in dict1 and passwords not in symb:
+        passwords1.append(passwords)
+    print(passwords1)

@@ -1,0 +1,13 @@
+print("Group one: ")
+my_var1 = 7.0
+my_var2 = 5
+print(my_var1 % my_var2)
+
+print("Group two: ")
+x = 4
+y = 5
+print(x//y)
+
+print("Group three: ")
+print(30-3**2+8//3**2*10)
+

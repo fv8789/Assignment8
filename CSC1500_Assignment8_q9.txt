@@ -1,0 +1,9 @@
+bill = int(input("Enter bill amount: "))
+tip15, tip20, tip25 = bill * 0.15, bill * 0.20, bill * 0.25
+prompt = int(input("Enter 15, 20, or 25 for tip amount: "))
+if prompt == 15:
+    print(tip15)
+elif prompt == 20:
+    print(tip20)
+elif prompt == 25:
+    print(tip25)
